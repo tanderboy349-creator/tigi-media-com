@@ -1,0 +1,6 @@
+{
+  "name": "TIGI Media & Creative Agency",
+  "description": "Dynamic landing page for TIGI Media & Creative Agency featuring a live admin panel to customize profile information, pricing, and theme color.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

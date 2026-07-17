@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIGI Media & Creative Agency — Create. Connect. Grow.</title>
+    <!-- Tailwind CSS v3 CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Configure Tailwind with custom design system connected to CSS variables
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'var(--primary)',
+              secondary: 'var(--secondary)',
+              darkbg: 'var(--dark-bg)',
+              lightbg: 'var(--light-bg)',
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Custom CSS styles and variables -->
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-sans selection:bg-primary/20 selection:text-primary overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 glass-effect border-b border-slate-100 py-4 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2 group">
+          <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white font-black text-xl shadow-md shadow-primary/20 transition-transform duration-300 group-hover:rotate-6">
+            T
+          </div>
+          <span class="text-lg md:text-xl font-extrabold text-slate-800 tracking-tight" data-field="agency-name">
+            TIGI Media & Creative Agency
+          </span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+          <a href="#beranda" class="hover:text-primary transition-colors">Beranda</a>
+          <a href="#tentang" class="hover:text-primary transition-colors">Fokus Kami</a>
+          <a href="#layanan" class="hover:text-primary transition-colors">Layanan & Harga</a>
+          <a href="#portofolio" class="hover:text-primary transition-colors">Portofolio</a>
+        </nav>
+
+        <!-- CTA Header Button -->
+        <div class="flex items-center gap-4">
+          <a data-field="whatsapp-btn" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5" id="navCta">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.59 1.977 14.113.953 11.998.953 6.556.953 2.133 5.325 2.13 10.75c-.001 1.703.453 3.361 1.314 4.816L2.49 19.835l4.157-1.091z"/></svg>
+            Konsultasi Gratis
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative pt-32 pb-24 md:pt-40 md:pb-36 overflow-hidden bg-grid-pattern">
+      <!-- Ambient colorful blobs for modern premium touch -->
+      <div class="absolute top-1/4 left-1/10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse-slow"></div>
+      <div class="absolute bottom-1/4 right-1/10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
+
+      <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Text Column -->
+          <div class="lg:col-span-7 text-center lg:text-left">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-wider uppercase mb-6 shadow-sm border border-primary/10">
+              ⚡ Creative & Digital Media Partner Aceh
+            </span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 leading-[1.1] mb-6 tracking-tight">
+              Wujudkan Ide Bisnis Anda Bersama <br />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary font-black" data-field="agency-name">
+                TIGI Media & Creative Agency
+              </span>
+            </h1>
+            <p class="text-lg md:text-xl font-bold text-slate-700 mb-3" data-field="tagline">
+              Create. Connect. Grow.
+            </p>
+            <p class="text-base md:text-lg leading-relaxed text-slate-500 mb-10 max-w-2xl mx-auto lg:mx-0">
+              Mitra kreatif tepercaya untuk <span class="text-slate-800 font-semibold">UMKM, Coffee Shop, Usaha Kuliner, dan Startup</span> di Banda Aceh. Kami merancang desain berkelas, konten media sosial menarik, serta strategi pemasaran digital yang meningkatkan penjualan usaha Anda.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a data-field="whatsapp-btn" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-bold text-base shadow-lg shadow-primary/25 hover:-translate-y-0.5 transition-all duration-300">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.59 1.977 14.113.953 11.998.953 6.556.953 2.133 5.325 2.13 10.75c-.001 1.703.453 3.361 1.314 4.816L2.49 19.835l4.157-1.091z"/></svg>
+                WhatsApp
+              </a>
+              <a data-field="telegram-btn" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#229ED9] hover:bg-[#1f8ec3] text-white px-8 py-4 rounded-full font-bold text-base shadow-lg shadow-sky-500/20 hover:-translate-y-0.5 transition-all duration-300">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.18l-1.91 9.02c-.14.63-.52.79-1.05.49l-2.91-2.15-1.4 1.35c-.15.15-.28.28-.58.28l.2-2.94 5.35-4.83c.23-.2-.05-.31-.36-.1L10.3 12.9l-2.85-.89c-.62-.19-.63-.62.13-.91l11.12-4.29c.51-.19.96.11.86.67z"/></svg>
+                Chat Telegram Bot
+              </a>
+              <a href="#layanan" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 px-6 py-4 rounded-full font-bold text-base shadow-xs hover:-translate-y-0.5 transition-all duration-300">
+                Lihat Harga
+              </a>
+            </div>
+
+            <!-- Client Trust badges / Banda Aceh indicators -->
+            <div class="mt-12 pt-8 border-t border-slate-200/60 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0">
+              <div class="text-center lg:text-left">
+                <div class="text-2xl font-black text-slate-800 font-mono">100%</div>
+                <div class="text-xs text-slate-400 font-medium">Banda Aceh Local Jasa</div>
+              </div>
+              <div class="text-center lg:text-left">
+                <div class="text-2xl font-black text-slate-800 font-mono">50+</div>
+                <div class="text-xs text-slate-400 font-medium">Coffee Shop & Kuliner</div>
+              </div>
+              <div class="text-center lg:text-left">
+                <div class="text-2xl font-black text-slate-800 font-mono">24/7</div>
+                <div class="text-xs text-slate-400 font-medium">Friendly Support</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Creative Dashboard Mockup Column (No image fallback - beautiful HTML render) -->
+          <div class="lg:col-span-5 relative mt-6 lg:mt-0">
+            <div class="relative w-full max-w-[450px] mx-auto animate-float">
+              <!-- Background glowing outline card -->
+              <div class="absolute -inset-1.5 bg-gradient-to-tr from-primary to-secondary rounded-3xl blur-xl opacity-30"></div>
+              
+              <!-- Main mockup card -->
+              <div class="relative bg-slate-900 text-slate-100 rounded-3xl shadow-2xl p-6 border border-white/10 overflow-hidden">
+                <div class="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                    <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                  </div>
+                  <span class="text-xs text-slate-400 font-mono uppercase bg-white/5 py-1 px-3 rounded-md border border-white/5">TIGI Workspace v1.0</span>
+                </div>
+
+                <!-- Inner UI blocks illustrating social content & design draft -->
+                <div class="space-y-4">
+                  <!-- Coffee Shop Project indicator block -->
+                  <div class="bg-white/5 rounded-2xl p-4 border border-white/5 flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-white text-base font-bold">
+                      ☕
+                    </div>
+                    <div class="flex-1">
+                      <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold text-slate-200">Rebranding Project</span>
+                        <span class="text-[10px] bg-emerald-500/20 text-emerald-400 font-semibold px-2 py-0.5 rounded-full">Selesai</span>
+                      </div>
+                      <h4 class="text-sm font-bold text-white mt-1">Ulee Kareng Coffee Shop</h4>
+                      <p class="text-[11px] text-slate-400 mt-1">Identitas visual, desain logo, menu, & video reels estetik khas Aceh.</p>
+                    </div>
+                  </div>
+
+                  <!-- Instagram Analytic block -->
+                  <div class="bg-white/5 rounded-2xl p-4 border border-white/5">
+                    <div class="flex items-center justify-between mb-3">
+                      <span class="text-xs font-bold text-slate-200">Social Media Engagement</span>
+                      <span class="text-xs text-primary font-bold">+184% MoM</span>
+                    </div>
+                    <!-- Mock diagram bar -->
+                    <div class="flex items-end justify-between gap-2 h-16 pt-2">
+                      <div class="w-full bg-white/10 rounded-t-md" style="height: 30%;"></div>
+                      <div class="w-full bg-white/10 rounded-t-md" style="height: 45%;"></div>
+                      <div class="w-full bg-white/10 rounded-t-md" style="height: 35%;"></div>
+                      <div class="w-full bg-white/10 rounded-t-md" style="height: 60%;"></div>
+                      <div class="w-full bg-gradient-to-t from-primary to-primary/80 rounded-t-md" style="height: 85%;"></div>
+                    </div>
+                  </div>
+
+                  <!-- Feedback badge overlay -->
+                  <div class="bg-white/5 rounded-2xl p-3 border border-white/5 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <div class="flex -space-x-2">
+                        <span class="w-6 h-6 rounded-full bg-indigo-500 text-[10px] font-bold flex items-center justify-center border border-slate-900">U1</span>
+                        <span class="w-6 h-6 rounded-full bg-pink-500 text-[10px] font-bold flex items-center justify-center border border-slate-900">U2</span>
+                      </div>
+                      <span class="text-xs font-medium text-slate-300">Rekomendasi Klien Kuliner</span>
+                    </div>
+                    <div class="flex items-center gap-0.5 text-yellow-400">
+                      <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                      <span class="text-xs font-bold text-white font-mono">5.0</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Focus / Tentang Kami Section (Target Banda Aceh UMKM/Kuliner) -->
+    <section id="tentang" class="py-20 bg-white border-y border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-extrabold text-primary tracking-wider uppercase bg-primary/10 px-4 py-1.5 rounded-full border border-primary/5 mb-3 inline-block">
+            Target & Solusi Kami
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Membantu UMKM, Coffee Shop & Startup di Banda Aceh Tumbuh Pesat
+          </h2>
+          <p class="text-slate-500 mt-4 text-base md:text-lg">
+            Kami memahami kendala utama pebisnis lokal di Aceh: keterbatasan waktu, minimnya tim kreatif, dan bingung cara beriklan secara digital. TIGI hadir menjadi solusi satu pintu Anda.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- UMKM Kuliner Aceh -->
+          <div class="bg-slate-50/50 hover:bg-white rounded-2xl p-6 border border-slate-100 shadow-xs transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-orange-500/10 text-orange-600 flex items-center justify-center mb-6 font-bold text-xl">
+              🍜
+            </div>
+            <h3 class="text-lg font-bold text-slate-800 mb-2">Usaha Kuliner</h3>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              Foto menu profesional yang menggugah selera, desain packaging premium, dan video review makanan yang viral untuk warga Banda Aceh.
+            </p>
+          </div>
+
+          <!-- Coffee Shops -->
+          <div class="bg-slate-50/50 hover:bg-white rounded-2xl p-6 border border-slate-100 shadow-xs transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-yellow-600/10 text-yellow-700 flex items-center justify-center mb-6 font-bold text-xl">
+              ☕
+            </div>
+            <h3 class="text-lg font-bold text-slate-800 mb-2">Coffee Shop</h3>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              Branding visual estetik, konten Instagram reels cinematic, serta optimasi Google Maps agar mudah ditemukan turis dan penikmat kopi Aceh.
+            </p>
+          </div>
+
+          <!-- Local UMKM & Toko -->
+          <div class="bg-slate-50/50 hover:bg-white rounded-2xl p-6 border border-slate-100 shadow-xs transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center mb-6 font-bold text-xl">
+              🛍️
+            </div>
+            <h3 class="text-lg font-bold text-slate-800 mb-2">UMKM & Toko Fisik</h3>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              Banner promosi berkala, copywriting penawaran jitu, pengelolaan feeds harian, serta iklan digital (FB/IG Ads) tertarget geografis Aceh.
+            </p>
+          </div>
+
+          <!-- Startup & Tech -->
+          <div class="bg-slate-50/50 hover:bg-white rounded-2xl p-6 border border-slate-100 shadow-xs transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-600 flex items-center justify-center mb-6 font-bold text-xl">
+              🚀
+            </div>
+            <h3 class="text-lg font-bold text-slate-800 mb-2">Startup & Instansi</h3>
+            <p class="text-sm text-slate-500 leading-relaxed">
+              Landing page super cepat responsif, identitas korporat solid, perancangan proposal kreatif, & materi kampanye digital berskala nasional.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section id="layanan" class="py-20 bg-slate-50 relative bg-dot-pattern">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-extrabold text-secondary tracking-wider uppercase bg-secondary/10 px-4 py-1.5 rounded-full border border-secondary/5 mb-3 inline-block">
+            Investasi Bisnis
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+            8 Layanan Kreatif & Estimasi Harga Transparan
+          </h2>
+          <p class="text-slate-500 mt-4 text-base md:text-lg">
+            Kami menjunjung tinggi kejujuran biaya. Pilih modul layanan kreatif di bawah ini. Anda dapat melakukan penyesuaian harga secara langsung via **Admin Live Panel** di bawah layar.
+          </p>
+        </div>
+
+        <!-- Dynamic services list grid container. Rendered & updated live by script.js -->
+        <div id="servicesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <!-- Placeholder loading template (Hydrated dynamically by script.js) -->
+          <div class="bg-white rounded-3xl p-8 border border-slate-100 animate-pulse h-80"></div>
+          <div class="bg-white rounded-3xl p-8 border border-slate-100 animate-pulse h-80"></div>
+          <div class="bg-white rounded-3xl p-8 border border-slate-100 animate-pulse h-80"></div>
+          <div class="bg-white rounded-3xl p-8 border border-slate-100 animate-pulse h-80"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portofolio" class="py-20 bg-white border-t border-slate-100">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div class="max-w-xl">
+            <span class="text-xs font-extrabold text-primary tracking-wider uppercase bg-primary/10 px-4 py-1.5 rounded-full border border-primary/5 mb-3 inline-block">
+              Karya Kreatif Kami
+            </span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+              Karya Pilihan Teruntuk Bisnis Terbaik Banda Aceh
+            </h2>
+          </div>
+          <p class="text-slate-500 text-sm md:text-base max-w-md">
+            Beberapa kolaborasi kreatif fiktif yang mendeskripsikan spesifikasi hasil pengerjaan tim TIGI untuk meningkatkan omset dan nilai brand klien.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Portfolio 1 -->
+          <div class="group overflow-hidden rounded-3xl border border-slate-100 bg-slate-50/30 transition-all duration-300 hover:shadow-xl">
+            <div class="relative overflow-hidden aspect-video bg-slate-900 text-slate-100 flex items-center justify-center font-bold text-4xl select-none">
+              ☕ SOLONG
+              <!-- Absolute graphic styling instead of broken images -->
+              <div class="absolute top-4 right-4 text-xs font-mono uppercase bg-white/10 px-3 py-1 rounded-full border border-white/5">Rebranding</div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <span class="text-[10px] uppercase tracking-wider font-bold text-primary font-mono bg-primary/10 px-2 py-0.5 rounded">Identitas Brand</span>
+              <h3 class="text-lg font-bold text-slate-800 mt-2">Kopi Solong — Rebranding & Menu</h3>
+              <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                Pembuatan ulang manual logo ikonik, standardisasi warna, cetakan papan nama akrilik, serta layout menu digital yang estetik dan mudah dibaca.
+              </p>
+            </div>
+          </div>
+
+          <!-- Portfolio 2 -->
+          <div class="group overflow-hidden rounded-3xl border border-slate-100 bg-slate-50/30 transition-all duration-300 hover:shadow-xl">
+            <div class="relative overflow-hidden aspect-video bg-slate-800 text-slate-100 flex items-center justify-center font-bold text-4xl select-none">
+              🍗 RAYEUK
+              <div class="absolute top-4 right-4 text-xs font-mono uppercase bg-white/10 px-3 py-1 rounded-full border border-white/5">Social Campaign</div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <span class="text-[10px] uppercase tracking-wider font-bold text-secondary font-mono bg-secondary/10 px-2 py-0.5 rounded">Videografi & Ads</span>
+              <h3 class="text-lg font-bold text-slate-800 mt-2">Mie Aceh Rayeuk — Video Cinematic</h3>
+              <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                Produksi video reels bertema proses rempah-rempah yang cinematic, disusul penayangan Meta Ads untuk mendongkrak kunjungan di hari libur sebesar 40%.
+              </p>
+            </div>
+          </div>
+
+          <!-- Portfolio 3 -->
+          <div class="group overflow-hidden rounded-3xl border border-slate-100 bg-slate-50/30 transition-all duration-300 hover:shadow-xl">
+            <div class="relative overflow-hidden aspect-video bg-slate-950 text-slate-100 flex items-center justify-center font-bold text-4xl select-none">
+              💻 ACEHTECH
+              <div class="absolute top-4 right-4 text-xs font-mono uppercase bg-white/10 px-3 py-1 rounded-full border border-white/5">Web Development</div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <span class="text-[10px] uppercase tracking-wider font-bold text-emerald-500 font-mono bg-emerald-500/10 px-2 py-0.5 rounded">Landing Page</span>
+              <h3 class="text-lg font-bold text-slate-800 mt-2">AcehTech Hub — Website Landing</h3>
+              <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                Landing page responsif, super cepat, terintegrasi pendaftaran kursus digital online, serta formulir pengajuan startup inkubasi lokal Aceh.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner (Immersive Contrast Gradient) -->
+    <section class="py-20 bg-slate-900 text-white relative overflow-hidden bg-grid-pattern">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-3xl animate-pulse-slow"></div>
+      
+      <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+        <span class="text-xs uppercase font-extrabold text-primary tracking-widest font-mono mb-4 inline-block">Mulai Bersama TIGI</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+          Siap Meningkatkan Nilai Brand & Omset Usaha Anda?
+        </h2>
+        <p class="text-slate-300 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+          Hubungi kami sekarang untuk sesi konsultasi gratis seputar desain grafis, media sosial management, fotografi produk, videografi, hingga perancangan website profil UMKM Anda.
+        </p>
+
+        <!-- Dynamic Contact Buttons -->
+        <div class="flex flex-col items-center gap-6">
+          <div class="flex flex-col sm:flex-row items-center gap-4 justify-center w-full max-w-xl">
+            <a data-field="whatsapp-btn" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white hover:bg-slate-100 text-slate-900 px-8 py-4 rounded-full text-base font-extrabold shadow-2xl hover:-translate-y-0.5 transition-all duration-300">
+              <svg class="w-5 h-5 text-emerald-500 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.59 1.977 14.113.953 11.998.953 6.556.953 2.133 5.325 2.13 10.75c-.001 1.703.453 3.361 1.314 4.816L2.49 19.835l4.157-1.091z"/></svg>
+              Konsultasi WhatsApp
+            </a>
+            <a data-field="telegram-btn" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#229ED9] hover:bg-[#1f8ec3] text-white px-8 py-4 rounded-full text-base font-extrabold shadow-2xl hover:-translate-y-0.5 transition-all duration-300">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.18l-1.91 9.02c-.14.63-.52.79-1.05.49l-2.91-2.15-1.4 1.35c-.15.15-.28.28-.58.28l.2-2.94 5.35-4.83c.23-.2-.05-.31-.36-.1L10.3 12.9l-2.85-.89c-.62-.19-.63-.62.13-.91l11.12-4.29c.51-.19.96.11.86.67z"/></svg>
+              Chat Telegram Bot
+            </a>
+          </div>
+          <span class="text-xs text-slate-400">
+            atau hubungi nomor: <span class="font-bold text-slate-200" data-field="whatsapp-num">+6282164448558</span> atau Telegram: <span class="font-bold text-slate-200" data-field="telegram-username">@TigiAgencyBot</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Minimalist Footer -->
+    <footer class="bg-slate-950 text-slate-500 py-10 px-6 border-t border-white/5 text-center text-xs">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <p>© 2026 <span class="text-slate-300" data-field="agency-name">TIGI Media & Creative Agency</span>. All Rights Reserved. Banda Aceh, Indonesia.</p>
+        <p class="text-[10px] text-slate-600">Created for local UMKM scale-up with love.</p>
+      </div>
+    </footer>
+
+    <!-- Admin Control Panel (Floating & Collapsible Bottom Right) -->
+    <aside id="adminPanel" class="fixed bottom-4 right-4 w-[420px] max-w-full bg-slate-900 text-white rounded-3xl shadow-2xl border border-white/10 z-50 overflow-hidden collapsed flex flex-col h-[520px]">
+      
+      <!-- Panel Header (Acts as Collapse Toggle) -->
+      <button id="panelToggle" class="w-full flex items-center justify-between px-6 py-4 bg-slate-950 hover:bg-slate-900 border-b border-white/10 text-left transition-colors">
+        <div class="flex items-center gap-2.5">
+          <span class="text-primary text-lg">🛠️</span>
+          <div>
+            <h4 class="text-sm font-bold text-white tracking-wide">TIGI Live Admin Control</h4>
+            <p class="text-[10px] text-slate-400">Ubah Profil, Harga & Warna Real-Time</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-primary/20 text-primary uppercase tracking-wider">Live</span>
+          <svg id="toggleIcon" class="w-4 h-4 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </div>
+      </button>
+
+      <!-- Panel Scrollable Forms Body -->
+      <div class="flex-1 p-6 overflow-y-auto admin-scroll space-y-6">
+        
+        <!-- Profile & Colors Setting Block -->
+        <div>
+          <h5 class="text-xs uppercase font-extrabold tracking-wider text-slate-400 mb-4 pb-1 border-b border-white/5">Profil Agency & Desain</h5>
+          <div class="space-y-4">
+            <!-- Agency Name input -->
+            <div>
+              <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Nama Agency</label>
+              <input id="inputAgencyName" type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-white focus:outline-hidden focus:border-primary transition-colors" placeholder="Masukkan nama agency..." />
+            </div>
+
+            <!-- Tagline input -->
+            <div>
+              <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Tagline Agency</label>
+              <input id="inputTagline" type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-white focus:outline-hidden focus:border-primary transition-colors" placeholder="Masukkan tagline..." />
+            </div>
+
+            <!-- WhatsApp input -->
+            <div>
+              <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Nomor WhatsApp (Kode Negara: 62)</label>
+              <input id="inputWhatsApp" type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-white focus:outline-hidden focus:border-primary transition-colors font-mono" placeholder="Contoh: 6282164448558" />
+            </div>
+
+            <!-- Telegram Bot input -->
+            <div>
+              <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Username Telegram Bot (Tanpa @)</label>
+              <input id="inputTelegram" type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-white focus:outline-hidden focus:border-primary transition-colors font-mono" placeholder="Contoh: TigiAgencyBot" />
+            </div>
+
+            <!-- Color Palette pickers -->
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">Warna Utama</label>
+                <div class="flex items-center gap-2">
+                  <input id="inputPrimaryColor" type="color" class="w-10 h-10 rounded-lg cursor-pointer bg-transparent border-0" />
+                  <span class="text-xs font-mono text-slate-400">Utama</span>
+                </div>
+              </div>
+              <div>
+                <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">Warna Sekunder</label>
+                <div class="flex items-center gap-2">
+                  <input id="inputSecondaryColor" type="color" class="w-10 h-10 rounded-lg cursor-pointer bg-transparent border-0" />
+                  <span class="text-xs font-mono text-slate-400">Sekunder</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Pricing & Info Settings Block -->
+        <div>
+          <div class="flex items-center justify-between mb-4 pb-1 border-b border-white/5">
+            <h5 class="text-xs uppercase font-extrabold tracking-wider text-slate-400">Editor 8 Layanan & Harga</h5>
+            <span class="text-[9px] bg-white/10 text-slate-300 px-1.5 py-0.5 rounded font-mono">1 dari 8</span>
+          </div>
+
+          <div class="space-y-4">
+            <!-- Service Selector Dropdown (Saves visual space!) -->
+            <div>
+              <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Pilih Layanan Yang Mau Diedit</label>
+              <select id="selectService" class="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-hidden focus:border-primary transition-colors cursor-pointer">
+                <!-- Populated dynamically -->
+              </select>
+            </div>
+
+            <!-- Selected Service Inputs Container -->
+            <div class="bg-white/5 p-4 rounded-2xl border border-white/5 space-y-4">
+              <!-- Service Title -->
+              <div>
+                <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Nama Layanan</label>
+                <input id="inputServiceName" type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-1.5 text-xs text-white focus:outline-hidden focus:border-primary transition-colors" />
+              </div>
+
+              <!-- Service Description -->
+              <div>
+                <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Deskripsi Layanan</label>
+                <textarea id="inputServiceDesc" rows="3" class="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-1.5 text-xs text-white focus:outline-hidden focus:border-primary transition-colors resize-none"></textarea>
+              </div>
+
+              <!-- Service Min/Max Pricing -->
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Harga Minimum (Rp)</label>
+                  <input id="inputServiceMinPrice" type="number" class="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-1.5 text-xs text-white focus:outline-hidden focus:border-primary transition-colors font-mono" />
+                </div>
+                <div>
+                  <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Harga Maksimum (Rp)</label>
+                  <input id="inputServiceMaxPrice" type="number" class="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-1.5 text-xs text-white focus:outline-hidden focus:border-primary transition-colors font-mono" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Panel Footer Action Buttons -->
+      <div class="px-6 py-4 bg-slate-950 border-t border-white/10 grid grid-cols-2 gap-3">
+        <button id="btnReset" class="w-full bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl py-2.5 text-xs font-bold transition-all text-slate-300">
+          Reset Default
+        </button>
+        <button id="btnSave" class="w-full bg-primary hover:bg-primary/90 text-white rounded-xl py-2.5 text-xs font-extrabold shadow-lg shadow-primary/25 transition-all">
+          Simpan Perubahan
+        </button>
+      </div>
+
+    </aside>
+
+    <!-- Main JS logic script -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
